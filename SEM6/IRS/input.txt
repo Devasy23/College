@@ -1,0 +1,5 @@
+S → CA | DB
+A → CAA | DS
+B → DBB | CS
+C → b
+D → a

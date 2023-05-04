@@ -1,0 +1,5 @@
+S -> S A | a | A S | b
+B -> A S | b | S A | a | S A | a | A S | b | S A | a | A S | b
+A -> S A1
+A1 -> B B
+S0 -> S A | a | S A | a | A S | b | A S | b | S A | a | S A | a | A S | b | S A | a | A S | b | A S | b | S A | a | S A | a | A S | b | S A | a | A S | b

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Codeforces Progress Tracker</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h1>Codeforces Progress Tracker</h1>
+  <h2>User: Bakasta07</h2>
+  <canvas id="myChart"></canvas>
+  <script>
+    let handle = "dev_decode";
+    let url = `https://codeforces.com/api/user.status?handle=${handle}&from=1&count=100`;
+    let xhr = new XMLHttpRequest();
+    xhr.open('GET', url);
+async function getTotalSubmissionsOnDate(dateStr) {
+  let response = await fetch(`https://codeforces.com/api/user.status?handle=Bakasta07`);
+  let data = await response.json();
+  let submissions = data.result;
+  
+  let count = 0;
+  submissions.forEach(function(submission) {
+    let date = new Date(submission.creationTimeSeconds * 1000);
+    let submissionDateStr = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+    if (submissionDateStr === dateStr) {
+      count++;
+    }
+  });
+  return count;
+}
+
+// get accepted submissions on a date
+async function getAcceptedSubmissionsOnDate(dateStr) {
+    
+  let response = await fetch(`https://codeforces.com/api/user.status?handle=Bakasta07`);
+  
+  let data = await response.json();
+  let submissions = data.result;
+  
+  let count = 0;
+
+  submissions.forEach(function(submission) {
+    let date = new Date(submission.creationTimeSeconds * 1000);
+    let submissionDateStr = `${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`;
+    if (submissionDateStr === dateStr && submission.verdict === "OK") {
+    
+      count++;
+    }
+
+  });
+  return count;
+}
+
+let dateStr = "2023-4-17";
+getTotalSubmissionsOnDate(dateStr).then(totalSubmissions => {
+  console.log(`Total submissions on ${dateStr}: ${totalSubmissions}`);
+});
+
+getAcceptedSubmissionsOnDate(dateStr).then(acceptedSubmissions => { 
+    console.log(`Accepted submissions on ${dateStr}: ${acceptedSubmissions}`);
+});
+
+
+async function getDailySubmissionsForLastSevenDays() {
+  const dates = getLastSevenDays();
+  let promises = [];
+
+  for (let i = 0; i < dates.length; i++) {
+    const date = dates[i];
+    promises.push(
+      Promise.all([
+        getTotalSubmissionsOnDate(date),
+        getAcceptedSubmissionsOnDate(date)
+      ]).then(([totalSubmissions, acceptedSubmissions]) => {
+        return { date, totalSubmissions, acceptedSubmissions };
+      }).catch(() => {
+        // retry once
+        return Promise.all([
+          getTotalSubmissionsOnDate(date),
+          getAcceptedSubmissionsOnDate(date)
+        ]).then(([totalSubmissions, acceptedSubmissions]) => {
+          return { date, totalSubmissions, acceptedSubmissions };
+        }).catch(() => {
+          // handle the error in some way, e.g. return an object with 0 values
+          return { date, totalSubmissions: 0, acceptedSubmissions: 0 };
+        });
+      })
+    );
+  }
+
+  return Promise.all(promises);
+}
+
+function getLastSevenDays() {
+  let dates = [];
+  for (let i = 0; i < 7; i++) {
+    let date = new Date();
+    date.setDate(date.getDate() - i);
+    dates.push(`${date.getFullYear()}-${date.getMonth() + 1}-${date.getDate()}`);
+  }
+  return dates;
+}
+
+getDailySubmissionsForLastSevenDays().then(function(results) {
+  console.log(results);
+});
+
+// Wait for all the promises to resolve
+Promise.allSettled(totalSubmissionsPromises.concat(acceptedSubmissionsPromises)).then(function(results) {
+  let totalSubmissionsData = results.slice(0, 7);
+  let acceptedSubmissionsData = results.slice(7);
+  
+  // Create a line chart
+  let chartData = {
+    labels: dates,
+    datasets: [
+      {
+        label: 'Total Submissions',
+        data: totalSubmissionsData,
+        borderColor: 'blue',
+        fill: false
+      },
+      {
+        label: 'Accepted Submissions',
+        data: acceptedSubmissionsData,
+        borderColor: 'red',
+        fill: false
+      }
+    ]
+  };
+  
+  let chartOptions = {
+    scales: {
+      yAxes: [{
+        ticks: {
+          beginAtZero: true
+        }
+      }]
+    }
+  };
+  
+  let chart = new Chart('myChart', {
+    type: 'line',
+    data: chartData,
+    options: chartOptions
+  });
+});
+
+
+        
+  </script>
+</body>
+</html>
