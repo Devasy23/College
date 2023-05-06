@@ -1,0 +1,18 @@
+# depslib dependency file v1.0
+1623902968 source:c:\program file\codebloks\mingw\bin\railwaymenagementsystem_202001202_202001240\main.cpp
+	<Administrator.h>
+	<customer.h>
+	<windows.h>
+
+1623859713 c:\program file\codebloks\mingw\bin\railwaymenagementsystem_202001202_202001240\include\administrator.h
+	<bits/stdc++.h>
+
+1623859713 c:\program file\codebloks\mingw\bin\railwaymenagementsystem_202001202_202001240\include\customer.h
+	<bits/stdc++.h>
+
+1623902715 source:c:\program file\codebloks\mingw\bin\railwaymenagementsystem_202001202_202001240\src\customer.cpp
+	"customer.h"
+
+1623665631 source:c:\program file\codebloks\mingw\bin\railwaymenagementsystem_202001202_202001240\src\administrator.cpp
+	"Administrator.h"
+

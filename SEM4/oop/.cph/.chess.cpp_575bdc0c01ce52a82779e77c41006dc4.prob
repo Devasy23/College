@@ -1,0 +1,1 @@
+{"name":"Local: chess","url":"c:\\Users\\user\\Desktop\\college\\oop\\chess.cpp","tests":[{"id":1637484435546,"input":"8\n1 1\n9 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\user\\Desktop\\college\\oop\\chess.cpp","group":"local","local":true}

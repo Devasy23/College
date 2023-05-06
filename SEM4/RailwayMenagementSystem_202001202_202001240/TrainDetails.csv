@@ -1,0 +1,13 @@
+Name,Id,Route,Time,Ticket
+Rajdhani Express,10001,New Delhi - Mumbai,16:25 - 8:15,4700
+Maharaja Express,10002,Agara - Udaipur,13:25 - 2:55,12560
+Himalyan Queen,10003,New Delhi - Chandigadh,5:35 - 10:25,3650
+Golden Chariot,10004,Bangalore - Goa,10:20 - 6:10,5660
+Shatabdhi Express,10005,Ahmedabad - Mumbai,14:25 - 21:20,2635
+Garibrath Express,10006,Nagpur - Pune,18:35 - 9:45,1870
+Vande Bharat Express,10007,Varansi - New Dheli,8:45 - 16:10,3310
+Tejas Express,10008,Ahmedabad - Mumbai,6:40 - 13:10,2350
+Vivek Express,10009,Dibrugarh - Guwahati,23:45 - 11:45,2730
+Kavi-guru Express,10010,Udaipur - Kanpur,16:05 - 12:40,4140
+Chennai Mail,10011,Chennai - Mumbai,1:15 - 19:05,8710
+Gitanjali Express,10012,Howrah - Mumbai,6:05 - 21:45,9450
