@@ -1,0 +1,9 @@
+XAI_Lime&PDP.ipynb contails the following:
+``` LIME on MNist
+    PDP plots on irirs
+    Lime on irirs
+    Saliency maps
+```
+cifar_10_lime.ipynb contails the following:
+``` LIME on CIfar 10
+```
