@@ -1,4 +1,4 @@
-Depository for all the files of the 5th & 6th Semester of B.Tech. CSE at Nirma University.
+Depository for all the files of the 5th, 6th & 7th Semester of B.Tech. CSE at Nirma University.
 =====
 
 
