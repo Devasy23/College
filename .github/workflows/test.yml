@@ -1,0 +1,41 @@
+name: Generate Directory Structure
+
+on:
+  push:
+    branches:
+      - main  # Replace with your main branch name
+
+jobs:
+  generate-directory-structure:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Install required tools
+      run: |
+        apt-get update -y
+        apt-get install -y jq
+      shell: bash
+
+    - name: Generate Directory Structure
+      run: |
+        # Generate directory structure and save it to a file
+        tree -I 'node_modules|.git|.github' -o directory-structure.txt -a
+
+        # Commit the directory structure file
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add directory-structure.txt
+        git commit -m "Generate directory structure"
+        git push
+      shell: bash
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v4
+      with:
+        branch: update-directory-structure
+        title: "Update Directory Structure"
+        commit-message: "Updated directory structure"
+        body: "This PR updates the directory structure in the README."
