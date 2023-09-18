@@ -2,8 +2,7 @@ name: Generate Directory Structure
 
 on:
   push:
-    branches:
-      - main  # Replace with your main branch name
+    branches: [ "main" ] # Replace with your main branch name
 
 jobs:
   generate-directory-structure:
