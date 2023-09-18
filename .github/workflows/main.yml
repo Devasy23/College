@@ -3,7 +3,7 @@ name: Print Directory Structure
 on:
   push:
     branches:
-      - main  # Replace with your main branch name
+      - main  
 
 jobs:
   print-directory-structure:
