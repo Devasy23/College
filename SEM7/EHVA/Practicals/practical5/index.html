@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiling</title>
+</head>
+<body>
+    <h1>User Profiling based on Typing Speed and Error Rate</h1>
+    <p>Type the following paragraph:</p>
+    <p id="paragraph">Certainly, here's a paragraph for the user to type:
+
+        "The quick brown fox jumps over the lazy dog. This is a classic sentence that contains every letter of the alphabet, making it a pangram. Pangrams are often used in typography and font samples to display all characters in a typeface. Now, it's your turn to type this sentence!"</p>
+    <textarea id="userInput" rows="4" cols="50" oninput="calculateProfile()"></textarea>
+
+    <p>Typing Speed: <span id="typingSpeed">0</span> words per minute</p>
+    <p>Error Rate: <span id="errorRate">0</span>%</p>
+    <p>Is this the user? <span id="prediction">Not enough data</span></p>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ml-regression/1.4.0/ml-regression.min.js"></script>
+    <script>
+        // Initialize variables
+        let startTime;
+        let endTime;
+        let errorCount = 0;
+        let backspaceCount = 0;
+        let typingSpeed = 0;
+        let regressionModel;
+
+        // Function to calculate typing speed and error rate
+        function calculateProfile() {
+            const paragraph = document.getElementById("paragraph").textContent;
+            const userInput = document.getElementById("userInput").value;
+            
+            // Count errors and backspaces
+            errorCount = 0;
+            backspaceCount = 0;
+            for (let i = 0; i < paragraph.length; i++) {
+                if (paragraph[i] !== userInput[i]) {
+                    errorCount++;
+                }
+                if (userInput[i] === '\b') {
+                    backspaceCount++;
+                }
+            }
+
+            // Calculate typing speed
+            endTime = new Date();
+            const elapsedTime = (endTime - startTime) / 1000; // in seconds
+            const wordsTyped = userInput.split(' ').length;
+            typingSpeed = Math.round((wordsTyped / elapsedTime) * 60); // words per minute
+
+            // Update HTML elements
+            document.getElementById("typingSpeed").textContent = typingSpeed;
+            document.getElementById("errorRate").textContent = ((errorCount / paragraph.length) * 100).toFixed(2);
+            if (regressionModel) {
+                const prediction = regressionModel.predict([typingSpeed, errorCount, backspaceCount]);
+                document.getElementById("prediction").textContent = prediction >= 0.5 ? "Yes" : "No";
+            }
+        }
+
+        // Start timing when the user starts typing
+        document.getElementById("userInput").addEventListener("focus", () => {
+            startTime = new Date();
+        });
+
+        // Train a basic linear regression model with some sample data (you should collect real data)
+        const trainingData = [
+            { input: [40, 5, 2], output: 1 }, // Example of a "user" profile
+            { input: [25, 10, 5], output: 0 }, // Example of a "non-user" profile
+        ];
+
+        regressionModel = new ML.SimpleLinearRegression();
+        regressionModel.train(trainingData.map(data => data.input), trainingData.map(data => data.output));
+    </script>
+</body>
+</html>

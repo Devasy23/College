@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profiling</title>
+</head>
+<body>
+    <h1>User Profiling based on Typing Speed and Error Rate</h1>
+    
+    <h2>Training Data:</h2>
+    <textarea id="trainingData" rows="4" cols="50"></textarea>
+    <br>
+    <button onclick="trainModel()">Train Model</button>
+    
+    <h2>Testing Data:</h2>
+    <textarea id="testingData" rows="4" cols="50" oninput="testModel()"></textarea>
+
+    <p>Typing Speed: <span id="typingSpeed">0</span> words per minute</p>
+    <p>Error Rate: <span id="errorRate">0</span>%</p>
+    <p>Is this the user? <span id="prediction">Not enough data</span></p>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/regression/2.0.1/regression.min.js" integrity="sha512-0k6FXllQktdobw8Nc8KQN2WtZrOuxpMn7jC2RKCF6LR7EdOhhrg3H5cBPxhs3CFzQVlO6ni1B9SDLUPhBs0Alg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <script type="module"> import jsregression from 'https://cdn.jsdelivr.net/npm/js-regression@1.0.10/+esm' </script>
+    <script>
+        let startTime;
+        let endTime;
+        let errorCount = 0;
+        let backspaceCount = 0;
+        let typingSpeed = 0;
+        let regressionModel;
+
+        function calculateProfile(userInput) {
+            const paragraph = document.getElementById("trainingData").value;
+            
+            errorCount = 0;
+            backspaceCount = 0;
+            for (let i = 0; i < paragraph.length; i++) {
+                if (paragraph[i] !== userInput[i]) {
+                    errorCount++;
+                }
+                if (userInput[i] === '\b') {
+                    backspaceCount++;
+                }
+            }
+
+            endTime = new Date();
+            const elapsedTime = (endTime - startTime) / 1000;
+            const wordsTyped = userInput.split(' ').length;
+            typingSpeed = Math.round((wordsTyped / elapsedTime) * 60);
+
+            document.getElementById("typingSpeed").textContent = typingSpeed;
+            document.getElementById("errorRate").textContent = ((errorCount / paragraph.length) * 100).toFixed(2);
+        }
+
+        function trainModel() {
+            const trainingData = [
+                { input: [40, 5, 2], output: 1 },
+                { input: [25, 10, 5], output: 0 },
+                // Add more training data as needed
+            ];
+
+            regressionModel = new regression.LogisticRegression({ numSteps: 100, learningRate: 5e-3 });
+            regressionModel.train(trainingData.map(data => data.input), trainingData.map(data => data.output));
+        }
+        function train_model2(){
+            var js_regression = require('js-regression');
+            var data = [[40, 5, 2], [25, 10, 5]];
+            var result = [1, 0];
+            var regression = new js_regression.LogisticRegression({
+                alpha: 0.001,
+                iterations: 1000,
+                lambda: 0.0
+            });
+            regression.fit(data, result);
+            console.log(regression);
+
+            
+
+        }
+        function testModel() {
+            if (!regressionModel) {
+                alert("Please train the model first.");
+                return;
+            }
+
+            const userInput = document.getElementById("testingData").value;
+            calculateProfile(userInput);
+
+            const prediction = regressionModel.predict([typingSpeed, errorCount, backspaceCount]);
+            document.getElementById("prediction").textContent = prediction >= 0.5 ? "Yes" : "No";
+        }
+    </script>
+</body>
+</html>

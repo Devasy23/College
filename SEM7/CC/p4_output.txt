@@ -1,0 +1,5 @@
+A -> BC | a
+B -> CAB' | abB'
+C -> abB'CBC' | aBC' | aC'
+B' -> CbB' | ε
+C' -> AB'CBC' | CC' | ε

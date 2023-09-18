@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Browser</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: row;
+            overflow: auto;
+        }
+        .sidebar {
+            background-color: #eee;
+            padding: 10px;
+            min-width: 200px;
+        }
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .sidebar li {
+            margin-bottom: 5px;
+        }
+        .sidebar a {
+            color: #333;
+            text-decoration: none;
+        }
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+        .main {
+            flex: 1;
+            padding: 10px;
+        }
+        .main h2 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .main iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>File Browser</h1>
+        </div>
+        <div class="content">
+            <div class="sidebar">
+                <ul id="folder-list">
+                </ul>
+            </div>
+            <div class="main">
+                <h2 id="file-name">Select a folder to view its contents</h2>
+                <div id="file-content"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Get list of folders and files
+        // Fetch folder structure on page load
+window.addEventListener('load', function() {
+    fetchFolderStructure();
+});
+
+// Fetch folder structure from file_structure.json and populate sidebar
+function fetchFolderStructure() {
+    fetch('file_structure.json')
+        .then(response => response.json())
+        .then(data => {
+            const folderList = document.getElementById('folder-list');
+            folderList.innerHTML = '';
+            data.folders.forEach(folder => {
+                const folderLink = document.createElement('a');
+                folderLink.href = '#';
+                folderLink.textContent = folder.name;
+                folderLink.addEventListener('click', function() {
+                    displayFolderContents(folder);
+                });
+                const folderItem = document.createElement('li');
+                folderItem.appendChild(folderLink);
+                folderList.appendChild(folderItem);
+            });
+        })
+        .catch(error => console.error(error));
+}
+
+// Display folder contents in the main content area
+function displayFolderContents(folder) {
+    const fileName = document.getElementById('file-name');
+    fileName.textContent = `Contents of ${folder.path}`;
+    const fileContent = document.getElementById('file-content');
+    fileContent.innerHTML = '';
+    folder.contents.forEach(item => {
+        const itemLink = document.createElement('a');
+        itemLink.href = '#';
+        itemLink.textContent = item.name;
+        if (item.contents && item.contents.length > 0) {
+            itemLink.addEventListener('click', function() {
+                displayFolderContents(item);
+            });
+        }
+        const itemItem = document.createElement('div');
+        itemItem.appendChild(itemLink);
+        fileContent.appendChild(itemItem);
+    });
+}
+
+        
+
+        // Display PDF file in main content area
+        function displayPdfFile(filePath) {
+            const fileName = document.getElementById('file-name');
+            fileName.textContent = filePath;
+            const fileContent = document.getElementById('file-content');
+            fileContent.innerHTML = `<iframe src="${filePath}" width="100%" height="100%"></iframe>`;
+        }
+
+        // Display Jupyter notebook in main content area
+        function displayJupyterNotebook(filePath) {
+            const fileName = document.getElementById('file-name');
+            fileName.textContent = filePath;
+            const fileContent = document.getElementById('file-content');
+            fileContent.innerHTML = `<iframe src="https://nbviewer.jupyter.org/url/${filePath}" width="100%" height="100%"></iframe>`;
+        }
+    </script>
+</body>
+</html>
