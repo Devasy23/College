@@ -35,8 +35,10 @@ jobs:
         echo "Directory Structure:"
         echo "$directory_structure"
         
-        # Create a new branch with dynamic name
-        git checkout -b add-directory-structure${{github.run_id}}
+        # Create a new branch with a prefix and a unique identifier
+        branch_name="add-directory-structure-${{ github.run_id }}"
+
+        git checkout -b $branch_name
 
         
 
@@ -54,5 +56,5 @@ jobs:
         git commit -m "Append directory structure to README"
 
         # Push the new branch
-        git push origin add-directory-structure
+        git push origin $branch_name
       shell: bash
