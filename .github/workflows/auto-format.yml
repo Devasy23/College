@@ -22,6 +22,7 @@ jobs:
       run: |
         # Generate directory structure and save it to a file
         tree -I 'node_modules|.git|.github' -o directory-structure.txt -a
+        echo "Directory Structure: part1"  # Print the directory structure for debugging
         echo "$(cat directory-structure.txt)"  # Output the captured directory structure
         echo "::set-output name=output-file::directory-structure.txt"
 
@@ -47,6 +48,7 @@ jobs:
         git config user.name "GitHub Actions"
         git config user.email "actions@github.com"
         git add README.md
+        git add directory-structure.txt
         git commit -m "Append directory structure to README"
 
         # Push the new branch
