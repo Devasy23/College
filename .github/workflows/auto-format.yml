@@ -1,13 +1,12 @@
-name: Print Directory Structure
+name: Print and Append Directory Structure to README
 
 on:
-
   push:
     branches:
-      - main  
+      - master  # Replace with your main branch name
 
 jobs:
-  print-directory-structure:
+  print-and-append-directory-structure:
     runs-on: ubuntu-latest
 
     steps:
@@ -15,4 +14,24 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Print Directory Structure
+      id: print-directory
       uses: FiorelaCiroku/XDTesting-Print-Directory-Structure@v1.0.2
+
+    - name: Append Directory Structure to README
+      run: |
+        # Get the generated directory structure
+        directory_structure=$(cat ${{ steps.print-directory.outputs.output-file }})
+
+        # Append it to the README.md file
+        echo "## Directory Structure" >> README.md
+        echo "```" >> README.md
+        echo "$directory_structure" >> README.md
+        echo "```" >> README.md
+
+        # Commit the changes
+        git config user.name "GitHub Actions"
+        git config user.email "actions@github.com"
+        git add README.md
+        git commit -m "Append directory structure to README"
+        git push
+      shell: bash
