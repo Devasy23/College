@@ -59,7 +59,21 @@ jobs:
 
         # Push the new branch
         git push origin $branch_name
-
-        # create pull request
-        hub pull-request -m "Updated directory structure to README" -b master -h $branch_name
+        
       shell: bash
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v3
+      with:
+        token: ${{ secrets.TREE }}
+        commit-message: Add directory structure to README
+        title: Add directory structure to README
+        body: |
+          This is an automated pull request to add the directory structure to the README.
+          It was created by a [GitHub Action](
+          https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions).
+        branch: add-directory-structure-${{ github.run_id }}
+        branch-suffix: timestamp
+        base: main
+        labels: directory-structure
+        reviewers: Devasy23
+        assignees: Devasy23
