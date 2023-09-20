@@ -35,8 +35,10 @@ jobs:
         echo "Directory Structure:"
         echo "$directory_structure"
         
-        # Create a new branch
-        git checkout -b add-directory-structure
+        # Create a new branch with dynamic name
+        git checkout -b add-directory-structure${{github.run_id}}
+
+        
 
         # Append it to the README.md file
         echo "## Directory Structure" >> README.md
