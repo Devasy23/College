@@ -1,0 +1,721 @@
+.
+├── 5.1 Face Detection App- Code.zip
+├── README.md
+├── SEM4
+│   ├── .cph
+│   │   └── .hcode.cpp_06528ec1d70888ce567ab1f3bcc7ed71.prob
+│   ├── 20BCE034_dbms_pratical5.PDF
+│   ├── 20BCE034_dbms_pratical5.docx
+│   ├── 20BCE204 PS Assignment 1.pdf
+│   ├── 4c.txt
+│   ├── Assignment 1_2MA402.pdf
+│   ├── CF
+│   │   ├── .cph
+│   │   │   └── .asdn.cpp_d32e2e838150ef571c5c69c76094b212.prob
+│   │   ├── .vscode
+│   │   │   ├── launch.json
+│   │   │   └── tasks.json
+│   │   ├── asdn.cpp
+│   │   └── asdn.exe
+│   ├── FIles_4c.txt
+│   ├── File1.txt
+│   ├── File2.txt
+│   ├── File3.txt
+│   ├── PSC_4.ipynb
+│   ├── PS_20BCE057_ 06-04-2022.pdf
+│   ├── Practical - 7.docx
+│   ├── Practical2.ipynb
+│   ├── Practical5_057.ipynb
+│   ├── RailwayManagementSystem_202001202_202001240.zip
+│   ├── RailwayMenagementSystem_202001202_202001240
+│   │   ├── Document
+│   │   │   └── RailwayManagementSystem_202001202_202001240.pdf
+│   │   ├── RailwayManagementSystem_202001202_202001240.cbp
+│   │   ├── RailwayManagementSystem_202001202_202001240.depend
+│   │   ├── RailwayManagementSystem_202001202_202001240.layout
+│   │   ├── TrainDetails.csv
+│   │   ├── bin
+│   │   │   └── Debug
+│   │   │       ├── RailwayManagementSystem_202001202_202001240.exe
+│   │   │       └── RailwayMenagementSystem_202001202_202001240.exe
+│   │   ├── customerDetails.csv
+│   │   ├── include
+│   │   │   ├── Administrator.h
+│   │   │   └── customer.h
+│   │   ├── main.cpp
+│   │   ├── obj
+│   │   │   └── Debug
+│   │   │       ├── main.o
+│   │   │       └── src
+│   │   │           ├── Administrator.o
+│   │   │           └── customer.o
+│   │   └── src
+│   │       ├── Administrator.cpp
+│   │       └── customer.cpp
+│   ├── ca_innovative
+│   │   ├── CA_Innovative_20BCE052_20BCE057_20BCE064.pdf
+│   │   └── ca_inn.circ
+│   ├── functional-dependencies-master
+│   │   ├── .gitignore
+│   │   ├── LICENSE
+│   │   ├── README.md
+│   │   ├── app.py
+│   │   ├── dbms_innovative_py.rar
+│   │   ├── fds
+│   │   │   └── fds.py
+│   │   ├── fdtest.py
+│   │   ├── tempCodeRunnerFile.py
+│   │   └── tests
+│   │       ├── test-closure-4.txt
+│   │       └── testcases.py
+│   ├── functional-dependencies-master.zip
+│   ├── hcode.cpp
+│   ├── hcode.exe
+│   ├── head.sh
+│   ├── oop
+│   │   ├── .cph
+│   │   │   └── .chess.cpp_575bdc0c01ce52a82779e77c41006dc4.prob
+│   │   ├── .vscode
+│   │   │   └── settings.json
+│   │   ├── 20BCE057_OOPS_PRAC_8.pdf
+│   │   ├── 20BCE057_OOPS_PRAC_9.pdf
+│   │   ├── 20BCE057_OOP_3.pdf
+│   │   ├── 20BCE057_OOP_PRAC_5.pdf
+│   │   ├── 20BCE057_OOP_PRAC_6.pdf
+│   │   ├── 20BCE057_OOP_PRAC_7.pdf
+│   │   ├── 20BCE057_Practical 4.pdf
+│   │   ├── 20bce057_prac10.pdf
+│   │   ├── Prac1_oops_20bce057 (1).pdf
+│   │   ├── Practical2_20BCE057.pdf
+│   │   ├── chess.cpp
+│   │   ├── chess.exe
+│   │   ├── com
+│   │   │   └── company
+│   │   │       ├── GSSArray.class
+│   │   │       ├── p1
+│   │   │       │   ├── .cph
+│   │   │       │   │   └── .test.java_4715f0b0e33a8f7ab655c33da3958501.prob
+│   │   │       │   ├── Number.class
+│   │   │       │   ├── oops_9c.class
+│   │   │       │   ├── p1
+│   │   │       │   │   ├── Number.class
+│   │   │       │   │   └── test.class
+│   │   │       │   └── test.java
+│   │   │       ├── tempCodeRunnerFile.java
+│   │   │       ├── test.class
+│   │   │       └── test.java
+│   │   ├── display.class
+│   │   ├── oop_5.pdf
+│   │   ├── prac1a.class
+│   │   ├── prac1a.java
+│   │   ├── prac1b.class
+│   │   ├── prac1b.java
+│   │   ├── prac1c.class
+│   │   ├── prac1c.java
+│   │   ├── prac2a.class
+│   │   ├── prac2a.java
+│   │   ├── prac2b.class
+│   │   ├── prac2b.java
+│   │   ├── prac3a.class
+│   │   ├── prac3a.java
+│   │   ├── prac3b.java
+│   │   ├── prac6
+│   │   │   ├── GSSArray.class
+│   │   │   ├── Polynomial.class
+│   │   │   ├── Polynomial.java
+│   │   │   ├── oops6d.class
+│   │   │   └── oops6d.java
+│   │   ├── semeste III-_SEE_final responses_final.pdf
+│   │   └── test.class
+│   ├── p8.sh
+│   ├── prac_4A.ipynb
+│   ├── prac_4B.ipynb
+│   └── tail.sh
+├── SEM5
+│   ├── CN
+│   │   ├── .cph
+│   │   │   └── .hamming.cpp_0fe666c4a5f12444113fcad88da40349.prob
+│   │   ├── CN-PYQS
+│   │   │   ├── 2CS502_IR_May_2022.pdf
+│   │   │   ├── 2CS502_IR_RPR_December_2021.pdf
+│   │   │   ├── 2CS502_IR_RPR_SPE_February_2022.pdf
+│   │   │   ├── 2CS502_RPR_July_2022.pdf
+│   │   │   ├── 2CS502_SPE_June_2022.pdf
+│   │   │   ├── CE503_IR_RPR_December_2017.pdf
+│   │   │   ├── CE503_IR_RPR_December_2018.pdf
+│   │   │   └── CE503_IR_RPR_December_2019.pdf
+│   │   ├── Chapter1-Introduction.pdf
+│   │   ├── Chapter3-DataLinkLayer_NEW.pdf
+│   │   ├── Chapter4-Medium Access Control SubLayer.pdf
+│   │   ├── Chapter5-NetworkLayer.pdf
+│   │   ├── Chapter6-TransportLayer.pdf
+│   │   ├── Numerical Questions
+│   │   │   ├── CN_Numericals_Data_Communication.pdf
+│   │   │   ├── CN_Numericals_Data_Link_Layer.pdf
+│   │   │   ├── CN_Numericals_MAC_Layer.pdf
+│   │   │   └── CN_Numericals_Network_Layer.pdf
+│   │   ├── Numerical Questions-20221221.zip
+│   │   ├── PRACTICALS
+│   │   │   ├── 20BCE057_CN_2.docx
+│   │   │   ├── 20BCE057_CN_3.docx
+│   │   │   ├── 20BCE057_CN_4.docx
+│   │   │   ├── 20BCE057_P6.docx
+│   │   │   ├── 20bce057_CN_5.docx
+│   │   │   ├── 20bce057_CN_5.rtf
+│   │   │   ├── CN Innovative.pkt
+│   │   │   ├── CN Innovative_fire.pkt
+│   │   │   ├── Innovative.txt
+│   │   │   ├── Pract7.pkt
+│   │   │   ├── Pract8.pkt
+│   │   │   ├── Pract9.pkt
+│   │   │   ├── Practical 1 CN.docx
+│   │   │   ├── cisco_cn_proj.pkt
+│   │   │   ├── hamming.cpp
+│   │   │   ├── p6.pkt
+│   │   │   └── p7_057.pkt
+│   │   ├── TCP and UDP.pdf
+│   │   ├── kk.jpg
+│   │   └── p1
+│   │       ├── Screenshot 2022-08-30 145804.png
+│   │       ├── s2.png
+│   │       ├── s3.png
+│   │       ├── s4.png
+│   │       ├── s5.png
+│   │       └── s6.png
+│   ├── DAA
+│   │   └── DAA_Unit_3_-_Recurrence_Relation_+_Divide_and_Conquer[1].pdf
+│   ├── ML
+│   │   ├── 3150703_ADA_GTU_Study_Material_Presentations_Unit-1_14082021030258PM.pptx
+│   │   ├── 3150703_ADA_GTU_Study_Material_Presentations_Unit-2_14082021030333PM.pptx
+│   │   ├── 3150703_ADA_GTU_Study_Material_Presentations_Unit-3_14082021030406PM.pptx
+│   │   ├── Clustering_DivA.pdf
+│   │   ├── KNN Naive Bayes and DT.pdf
+│   │   ├── Linear Regression.pptx
+│   │   ├── Machine Learning and its Applications.pdf
+│   │   ├── Multivariate Linear Regression-Shared.pptx
+│   │   ├── NN-DivA.pdf
+│   │   ├── New Chat.pdf
+│   │   ├── PYQS
+│   │   │   ├── CE623_IR_May_2019.pdf
+│   │   │   ├── ML 2018.pdf
+│   │   │   └── ML RPR 2018.pdf
+│   │   ├── Practical
+│   │   │   ├── 20BCE057_P2.ipynb
+│   │   │   ├── 20BCE057_Practical-4_final.ipynb
+│   │   │   ├── 20bce057_ml1.ipynb
+│   │   │   ├── Dataset.rar
+│   │   │   ├── Income Data.csv
+│   │   │   ├── ML_5.py
+│   │   │   ├── Train.csv
+│   │   │   ├── bkend.csv
+│   │   │   ├── bstart.csv
+│   │   │   ├── download.png
+│   │   │   ├── ml4sklearn.ipynb
+│   │   │   ├── ml5a.ipynb
+│   │   │   ├── ml6.ipynb
+│   │   │   ├── ml_p10_057.ipynb
+│   │   │   ├── ml_p7.ipynb
+│   │   │   ├── ml_p8_057.ipynb
+│   │   │   ├── ml_p9_057.ipynb
+│   │   │   ├── mlp3.ipynb
+│   │   │   ├── mlp4.ipynb
+│   │   │   ├── ocr1.ipynb
+│   │   │   ├── prac3.py
+│   │   │   ├── testp10.ipynb
+│   │   │   ├── tokens.txt
+│   │   │   └── tokens.xlsx
+│   │   ├── Regularization Shared.pptx
+│   │   ├── SSL and RL.pdf
+│   │   └── Week 15 Support Vector Machine.pdf
+│   ├── Papers
+│   │   ├── Papers
+│   │   │   ├── .DS_Store
+│   │   │   ├── DAA
+│   │   │   │   ├── 2CE322_IR_May_2010.pdf
+│   │   │   │   ├── 2CE339_IR_December_2015.pdf
+│   │   │   │   ├── 2CE339_IR_December_2016.pdf
+│   │   │   │   ├── 2CS503_IR_December_2021.pdf
+│   │   │   │   ├── 2CS503_IR_May_2022.pdf
+│   │   │   │   ├── 2CS503_IR_RPR_SPE_February_2022.pdf
+│   │   │   │   ├── CE601_IR_May_2017.pdf
+│   │   │   │   ├── CE601_IR_May_2019.pdf
+│   │   │   │   └── CE601_IR_RPR_May_2018.pdf
+│   │   │   ├── OR
+│   │   │   │   ├── 2MAOE26_IR_December_2021.pdf
+│   │   │   │   └── 2MAOE26_IR_February_2022.pdf
+│   │   │   └── SE
+│   │   │       ├── 2CS504_IR_December_2021.pdf
+│   │   │       ├── 2CS504_IR_February_2022.pdf
+│   │   │       ├── 2CS504_IR_May_2022.pdf
+│   │   │       └── 2CS504_RPR_July_2022.pdf
+│   │   └── __MACOSX
+│   │       └── Papers
+│   │           ├── ._.DS_Store
+│   │           ├── CN
+│   │           │   ├── ._2CS502_IR_May_2022.pdf
+│   │           │   ├── ._2CS502_IR_RPR_December_2021.pdf
+│   │           │   ├── ._2CS502_IR_RPR_SPE_February_2022.pdf
+│   │           │   ├── ._2CS502_RPR_July_2022.pdf
+│   │           │   ├── ._2CS502_SPE_June_2022.pdf
+│   │           │   ├── ._CE503_IR_RPR_December_2017.pdf
+│   │           │   ├── ._CE503_IR_RPR_December_2018.pdf
+│   │           │   └── ._CE503_IR_RPR_December_2019.pdf
+│   │           ├── DAA
+│   │           │   ├── ._2CE322_IR_May_2010.pdf
+│   │           │   ├── ._2CE339_IR_December_2015.pdf
+│   │           │   ├── ._2CE339_IR_December_2016.pdf
+│   │           │   ├── ._2CS503_IR_December_2021.pdf
+│   │           │   ├── ._2CS503_IR_May_2022.pdf
+│   │           │   ├── ._2CS503_IR_RPR_SPE_February_2022.pdf
+│   │           │   ├── ._CE601_IR_May_2017.pdf
+│   │           │   ├── ._CE601_IR_May_2019.pdf
+│   │           │   └── ._CE601_IR_RPR_May_2018.pdf
+│   │           ├── ML
+│   │           │   ├── ._CE623_IR_May_2019.pdf
+│   │           │   ├── ._ML 2018.pdf
+│   │           │   └── ._ML RPR 2018.pdf
+│   │           ├── OR
+│   │           │   ├── ._2MAOE26_IR_December_2021.pdf
+│   │           │   └── ._2MAOE26_IR_February_2022.pdf
+│   │           └── SE
+│   │               ├── ._2CS504_IR_December_2021.pdf
+│   │               ├── ._2CS504_IR_February_2022.pdf
+│   │               ├── ._2CS504_IR_May_2022.pdf
+│   │               └── ._2CS504_RPR_July_2022.pdf
+│   ├── Papers.zip
+│   └── SE
+│       ├── 1. The Product.pdf
+│       ├── 10. User Interface Design.pdf
+│       ├── 11. Software Testing.pdf
+│       ├── 12. Project Metrics and Software Project Estimation.pdf
+│       ├── 13. Software Configuration Management.pdf
+│       ├── 14. Quality Management.pdf
+│       ├── 15. Maintenance and Re-engineering.pdf
+│       ├── 16. Aspect Oriented Software Engineering.pdf
+│       ├── 2. Software Process and Process Models.pdf
+│       ├── 3. Project Management.pdf
+│       ├── 4. Software Requirements.pdf
+│       ├── 5. Requirement Engineering Process.pdf
+│       ├── 6. Requirement Modeling.pdf
+│       ├── 7. Design Concepts.pdf
+│       ├── 8. Architectural Design.pdf
+│       └── 9. Distributed Systems Architecture.pdf
+├── SEM6
+│   ├── DeepLearning
+│   │   ├── C3_W2.pdf
+│   │   ├── C3_W3.pdf
+│   │   ├── C4_W3.pdf
+│   │   ├── C4_W4.pdf
+│   │   ├── C5_W1.pdf
+│   │   ├── C5_W2.pdf
+│   │   ├── C5_W3.pdf
+│   │   ├── C5_W4.pdf
+│   │   ├── DL NOTES TILL Rnn.pdf
+│   │   ├── Practical
+│   │   │   ├── DLp1titanic-Devasy.ipynb
+│   │   │   ├── DLp1titanic.ipynb
+│   │   │   ├── FCN.ipynb
+│   │   │   ├── GOOG.csv
+│   │   │   ├── Limw_!.jpg
+│   │   │   ├── Stock price Practical (2).ipynb
+│   │   │   ├── XAI_Lime&PDP.ipynb
+│   │   │   ├── XAI_files.zip
+│   │   │   ├── cifar_10_lime.ipynb
+│   │   │   ├── cifar_predict.png
+│   │   │   ├── dl-lab-2a.ipynb
+│   │   │   ├── info.md
+│   │   │   ├── instruction.txt
+│   │   │   ├── lime.jpg
+│   │   │   ├── mnist.ipynb
+│   │   │   ├── p10_057.ipynb
+│   │   │   ├── p2_b.ipynb
+│   │   │   ├── p3b_057.pdf
+│   │   │   ├── p4.ipynb
+│   │   │   ├── p6b.ipynb
+│   │   │   ├── p8_057.pdf
+│   │   │   ├── p9_057.ipynb
+│   │   │   ├── practicalsdl578.zip
+│   │   │   ├── sentence_prediction.ipynb
+│   │   │   ├── submission (1).csv
+│   │   │   ├── submission.csv
+│   │   │   ├── submission1.csv
+│   │   │   ├── submission2.csv
+│   │   │   ├── submission3.csv
+│   │   │   ├── submission_mnist.csv
+│   │   │   ├── test.csv
+│   │   │   └── train.csv
+│   │   └── notes_mages
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_01_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_02_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_03_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_04_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_05_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_06_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_07_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_08_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_09_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_10_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_11_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_12_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_13_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_14_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_15_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_16_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_17_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_18_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_19_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_20_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_21_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_22_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_23_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_24_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_25_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_26_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_27_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_28_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_29_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_30_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_31_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_32_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_33_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_34_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_35_Image_0001.jpg
+│   │       ├── DLImage_Segmentation_onwards[1]_Page_36_Image_0001.jpg
+│   │       └── DLImage_Segmentation_onwards[1]_Page_37_Image_0001.jpg
+│   ├── FM
+│   │   ├── FM Formula Sheet.pdf
+│   │   ├── Final PPTs
+│   │   │   ├── Capital Budgeting
+│   │   │   │   ├── Capital Budgeting Final PPT.pptx
+│   │   │   │   ├── Capital Budgeting Questions_UE_FM.pdf
+│   │   │   │   ├── Capital Budgeting sum.pdf
+│   │   │   │   └── UE_FM_Solution_Capital Budgeting.pdf
+│   │   │   ├── Capital Structure
+│   │   │   │   ├── Capital Structure PPT.pptx
+│   │   │   │   ├── Capital Structure-EBIT-EPS.pdf
+│   │   │   │   └── Capital structure Solution.pdf
+│   │   │   ├── Cash Budget Questions.docx
+│   │   │   ├── Cash Management.pptx
+│   │   │   ├── Cost of Capital.pptx
+│   │   │   ├── Credit Management.pptx
+│   │   │   ├── Dividend Decision.pptx
+│   │   │   ├── Leverage Analysis PPt Final.pptx
+│   │   │   ├── Operating Cycle and Cash Conversion Cycle.pptx
+│   │   │   ├── Que_BEP_Leverages.docx
+│   │   │   ├── Risk and Return
+│   │   │   │   ├── Risk And Return Analysis.pptx
+│   │   │   │   ├── Risk and Return Questions.docx
+│   │   │   │   ├── Risk and return numericals Jan2023.pdf
+│   │   │   │   └── Risk and return solutionJan2023.pdf
+│   │   │   ├── Time Value of Money
+│   │   │   │   ├── TVM questions.docx
+│   │   │   │   └── Time Value of Money Final.pptx
+│   │   │   ├── Working Capital Management.pptx
+│   │   │   └── solution of BEP and Leverage.pdf
+│   │   ├── Financial Management_Course Policy.PDF
+│   │   ├── Notes
+│   │   │   ├── Capital budgeting.pdf
+│   │   │   ├── Cost of Capital.pdf
+│   │   │   └── Risk and Return.pdf
+│   │   ├── Practice Papers
+│   │   │   ├── Solutions
+│   │   │   │   ├── New doc Apr 26, 2023 10.56 PM.pdf
+│   │   │   │   ├── New doc Apr 26, 2023 11.00 PM.pdf
+│   │   │   │   └── New doc Apr 26, 2023 11.04 PM.pdf
+│   │   │   ├── UEIM007_IR_December_2017.pdf
+│   │   │   ├── UEIM007_IR_December_2021.pdf
+│   │   │   ├── UEIM007_IR_November_ 2019.pdf
+│   │   │   ├── UEIM007_IR_RPR_November_2018.pdf
+│   │   │   └── UEIM007_IR_SPE_February_2022.pdf
+│   │   ├── Practice Questions
+│   │   │   ├── Capital Budgeting Questions_UE_FM.pdf
+│   │   │   ├── Risk and return numericals Jan2023.pdf
+│   │   │   ├── Risk and return solutionJan2023.pdf
+│   │   │   └── UE_FM_Solution_Capital Budgeting.pdf
+│   │   └── Rapidops .pdf
+│   ├── IRS
+│   │   ├── 3.jpg
+│   │   ├── 4.jpg
+│   │   ├── 5.jpg
+│   │   ├── 6.jpg
+│   │   ├── 7.jpg
+│   │   ├── IRS_Innovative.pdf
+│   │   ├── IRS_canva.zip
+│   │   ├── IRS_check.pdf
+│   │   ├── IRS_inn.pdf
+│   │   ├── P10.html
+│   │   ├── P10.ipynb
+│   │   ├── P10.pdf
+│   │   ├── P2.html
+│   │   ├── P2.ipynb
+│   │   ├── P2.pdf
+│   │   ├── P3_20BCE057.pdf
+│   │   ├── P4.ipynb
+│   │   ├── P5.html
+│   │   ├── P5.ipynb
+│   │   ├── P5.pdf
+│   │   ├── P7.html
+│   │   ├── P7.ipynb
+│   │   ├── P7.pdf
+│   │   ├── P8.html
+│   │   ├── P8.ipynb
+│   │   ├── P8.pdf
+│   │   ├── P9.html
+│   │   ├── P9.ipynb
+│   │   ├── P9.pdf
+│   │   ├── PPt's
+│   │   │   ├── 14-pagerank.pdf
+│   │   │   ├── Multimedia IR.pptx
+│   │   │   ├── Page Rank.pptx
+│   │   │   ├── Recommender System.pptx
+│   │   │   ├── document classification.pptx
+│   │   │   ├── lecture16-crawling.ppt
+│   │   │   ├── lecture3-tolerant-retrieval.ppt
+│   │   │   ├── relevance feedback.pptx
+│   │   │   ├── tfidf.ppt
+│   │   │   └── tolerant-retrieval.pdf
+│   │   ├── U1.txt
+│   │   ├── U2.txt
+│   │   ├── U3.txt
+│   │   ├── U4.txt
+│   │   ├── bernoulli_naive-bayes.ipynb
+│   │   ├── code_final.ipynb
+│   │   ├── data.csv
+│   │   ├── devansh_lpw.py
+│   │   ├── features_opinions.csv
+│   │   ├── input.txt
+│   │   ├── lecture16-crawling(1).ppt
+│   │   ├── lpw.ipynb
+│   │   ├── multinomial_naive-bayes.ipynb
+│   │   ├── newplot.png
+│   │   ├── null-false.png
+│   │   ├── null-true.png
+│   │   ├── p6.ipynb
+│   │   └── train_p4.csv
+│   ├── NLP
+│   │   ├── 20BCE057_NLP_Practical_1.docx
+│   │   ├── 20BCE057_NLP_Practical_1.pdf
+│   │   ├── 2CSDE70_IR_May_2022.pdf
+│   │   ├── DL research scope.pdf
+│   │   ├── Fundamentals_ Maximum Entropy (MaxEnt) – Nades Notes.pdf
+│   │   ├── Markov Model-all3algos.pdf
+│   │   ├── corpus.txt
+│   │   ├── image.jpeg
+│   │   ├── image_recon.jpeg
+│   │   ├── khud_ka_word_to_vec.ipynb
+│   │   ├── lec03-LanguageModels (1).pdf
+│   │   ├── lec03-LanguageModels.pdf
+│   │   ├── lpw.ipynb
+│   │   ├── new_transcribe.ipynb
+│   │   ├── nlp 1 (1).pdf
+│   │   ├── output_1.png
+│   │   ├── output_2.png
+│   │   ├── p10_057.ipynb
+│   │   ├── p2_057.ipynb
+│   │   ├── p3_057.ipynb
+│   │   ├── p4_057.docx
+│   │   ├── p5.ipynb
+│   │   ├── p6_057 - Copy.ipynb
+│   │   ├── p6_057.ipynb
+│   │   ├── p7_057.ipynb
+│   │   ├── p8_057.ipynb
+│   │   ├── p9_057.ipynb
+│   │   ├── p_4.pdf
+│   │   ├── prac1.pdf
+│   │   ├── recordings
+│   │   │   ├── letters
+│   │   │   │   ├── a.wav
+│   │   │   │   ├── b.wav
+│   │   │   │   ├── c.wav
+│   │   │   │   ├── d.wav
+│   │   │   │   └── e.wav
+│   │   │   └── words
+│   │   │       ├── ace.wav
+│   │   │       ├── ad.wav
+│   │   │       ├── bad.wav
+│   │   │       ├── be.wav
+│   │   │       ├── bed.wav
+│   │   │       ├── cab.wav
+│   │   │       ├── cabbed.wav
+│   │   │       ├── cad.wav
+│   │   │       ├── dab.wav
+│   │   │       └── deed.wav
+│   │   ├── submission.csv
+│   │   ├── test.csv
+│   │   └── train.csv
+│   ├── README.md
+│   ├── Remote sensing
+│   │   ├── 1 Lecture .pptx
+│   │   ├── 10 Lecture Application .pdf
+│   │   ├── 2  Lecture .pptx
+│   │   ├── 3 Lecture.pptx
+│   │   ├── 4  Lecture resolution .pptx
+│   │   ├── 5 Sensor .pptx
+│   │   ├── 6 Lecture Sensor Contd .pptx
+│   │   ├── 7  Lecture Orbit and Satellite.pptx.pdf
+│   │   ├── 9 Lecture data analysis .pdf
+│   │   ├── DSAS.pdf
+│   │   ├── GIS - Introduction.pptx
+│   │   ├── GIS_IMP.pdf
+│   │   ├── GPS.pdf
+│   │   ├── Lecture GNSS_RS.pdf
+│   │   ├── Poster format.pptx
+│   │   ├── Remote Sensing.pptx
+│   │   ├── Untitled Diagram.drawio.png
+│   │   ├── Untitled Diagram_2018.png
+│   │   ├── Untitled Diagram_2019.png
+│   │   ├── all 3 together middle area.jpg
+│   │   ├── all 3 together top part.jpg
+│   │   ├── all 3 together.jpg
+│   │   └── poster gis.pptx
+│   └── THOC
+│       ├── 20BCE055_20BCE057_THOC_Innovative.zip
+│       ├── 2CS601_SPE_August_2022.pdf
+│       ├── CE501_IR_December_2016.pdf
+│       ├── CE501_IR_December_2017.pdf
+│       ├── CE501_IR_December_2019.pdf
+│       ├── CE501_IR_RPR_December_2018.pdf
+│       ├── THOC after sessional.pdf
+│       ├── Tutorial No 10.pdf
+│       ├── Tutorial No 7.pdf
+│       ├── Tutorial No 8.pdf
+│       ├── Tutorial No 9.pdf
+│       ├── __pycache__
+│       │   ├── code.cpython-310.pyc
+│       │   └── helper.cpython-310.pyc
+│       ├── app.py
+│       ├── cfg
+│       ├── code.ipynb
+│       ├── code.py
+│       ├── code_final.ipynb
+│       ├── gui.py
+│       ├── helper.py
+│       ├── innovative.ipynb
+│       ├── input.txt
+│       ├── main.js
+│       ├── model.txt
+│       ├── my_code.ipynb
+│       ├── out.txt
+│       ├── style.css
+│       ├── temp.ipynb
+│       ├── trackefr.html
+│       └── tracker.html
+├── SEM7
+│   ├── BDA
+│   │   ├── 20BCE057_BDA_Practical_2.docx
+│   │   ├── 20BCE057_BDA_Practical_2.pdf
+│   │   ├── BDA_P1_057.pdf
+│   │   ├── customer-segmentation-and-market-basket-analysis-p2.html
+│   │   ├── customer-segmentation-and-market-basket-analysis-p2.ipynb
+│   │   ├── customer-segmentation-and-market-basket-analysis-p2.pdf
+│   │   ├── final-Classification of digital data.pptx
+│   │   ├── final_BDA introduction.pptx
+│   │   ├── final_BDA platforms.pptx
+│   │   ├── final_HADOOP SHELL COMMANDS.docx
+│   │   └── final_hadoop ecosystem_hdfs.pptx
+│   ├── CC
+│   │   ├── CC_part1.pdf
+│   │   ├── CC_part2.pdf
+│   │   ├── p4.ipynb
+│   │   ├── p4_057_CC.py
+│   │   ├── p4_input.txt
+│   │   ├── p4_output.txt
+│   │   ├── p5_057.ipynb
+│   │   └── p5_057_CC.py
+│   ├── DIPA
+│   │   ├── Chapter 3.pdf
+│   │   ├── HPF-image.png
+│   │   ├── Microsoft PowerPoint - chapter2.pdf
+│   │   ├── Microsoft PowerPoint - chapter2.pptx
+│   │   ├── image-1.png
+│   │   ├── image.jpg
+│   │   ├── image.png
+│   │   ├── image2.jpeg
+│   │   ├── image_filter.png
+│   │   ├── moon_out2.jpg
+│   │   ├── output1.jpg
+│   │   ├── output2.jpg
+│   │   ├── output3.jpg
+│   │   ├── output4.jpg
+│   │   ├── p5_DIPA.ipynb
+│   │   └── p6_DIPA.ipynb
+│   ├── EHVA
+│   │   ├── 1. How hackers break in to the pc.pptx
+│   │   ├── 2. Working of Spyware and Antispyware.pptx
+│   │   ├── 20BCE055_20BCE057_20BCE061_Practical-4.pdf
+│   │   ├── 20BCE057_P1.pdf
+│   │   ├── 20BE057_Practical4.docx
+│   │   ├── 20bce057_ehva_3.pdf
+│   │   ├── 3. Websites invade privacy.pptx
+│   │   ├── 4. Dangers of Internet.pptx
+│   │   ├── 5. Phishing Attacks work.pptx
+│   │   ├── 6. Working of zombies and Trojan horses.pptx
+│   │   ├── 7. Security Dangers in Browsers.pptx
+│   │   ├── 8. Working of Worms and Viruses.pptx
+│   │   ├── 9. Wi-Fi Security Dangers and Protection.pptx
+│   │   ├── Attacks, Motivation and Information Disclosure.pptx
+│   │   ├── Basic Linux Exploits.pptx
+│   │   ├── Buffer Overflow Exploits - Magic Formula.pdf
+│   │   ├── EHVA_Practical2.pdf
+│   │   ├── Network Hacking - I.pdf
+│   │   ├── Practicals
+│   │   │   ├── Buffer Overflow Exploits - Magic Formula.pdf
+│   │   │   ├── Practical1
+│   │   │   │   ├── index.html
+│   │   │   │   ├── index.js
+│   │   │   │   ├── package-lock.json
+│   │   │   │   ├── package.json
+│   │   │   │   └── practical1
+│   │   │   │       ├── .gitignore
+│   │   │   │       ├── README.md
+│   │   │   │       ├── package-lock.json
+│   │   │   │       ├── package.json
+│   │   │   │       ├── public
+│   │   │   │       │   ├── favicon.ico
+│   │   │   │       │   ├── index.html
+│   │   │   │       │   ├── logo192.png
+│   │   │   │       │   ├── logo512.png
+│   │   │   │       │   ├── manifest.json
+│   │   │   │       │   └── robots.txt
+│   │   │   │       └── src
+│   │   │   │           ├── App.css
+│   │   │   │           ├── App.js
+│   │   │   │           ├── App.test.js
+│   │   │   │           ├── index.css
+│   │   │   │           ├── index.js
+│   │   │   │           ├── logo.svg
+│   │   │   │           ├── reportWebVitals.js
+│   │   │   │           └── setupTests.js
+│   │   │   └── practical5
+│   │   │       ├── index.html
+│   │   │       └── index2.html
+│   │   └── Web Security Contents-20230817.zip
+│   ├── EPUS
+│   │   ├── ILLUMINATION.pdf
+│   │   └── Regrigerator and Air Conditionig.pdf
+│   └── RE
+│       ├── 1.Intro.pdf
+│       ├── 2.Solar energy Geometry.pdf
+│       ├── 3. Solar Radiation Measurement.pdf
+│       ├── 4.Solar plate collector.pdf
+│       ├── 5. CPC.pdf
+│       ├── 6. Solar energy storage.pdf
+│       ├── 7. Applications of solar energy.pdf
+│       ├── Energy scenario 2023.pptx
+│       ├── EnergyStatisticsIndia2023.pdf
+│       ├── SOLAR ENERGY basics.pptx
+│       ├── Small Hydro.pptx
+│       ├── Solar Energy-20230822.zip
+│       ├── Solar Energy.pptx
+│       ├── Solar Numerical.jpg
+│       └── solar application.pptx
+├── directory-structure.txt
+├── file_browser.py
+├── file_structure.json
+├── index.html
+├── printTree.zshrc
+├── sk.py
+├── sk2.py
+└── socketp.ipynb
+
+87 directories, 631 files
