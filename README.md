@@ -360,3 +360,5 @@ Depository for all the files of the 5th, 6th & 7th Semester of B.Tech. CSE at Ni
   CPU: Intel Xeon 6226R
   GPU: Nvidia RTX3090 (24GB)
   ```
+## Directory Structure
+
