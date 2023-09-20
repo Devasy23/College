@@ -20,6 +20,9 @@ jobs:
         # Get the generated directory structure
         directory_structure=$(cat ${{ steps.print-directory.outputs.output-file }})
 
+        # Create a new branch
+        git checkout -b add-directory-structure
+
         # Append it to the README.md file
         echo "## Directory Structure" >> README.md
         echo "```" >> README.md
@@ -31,5 +34,7 @@ jobs:
         git config user.email "actions@github.com"
         git add README.md
         git commit -m "Append directory structure to README"
-        git push
+
+        # Push the new branch
+        git push origin add-directory-structure
       shell: bash
