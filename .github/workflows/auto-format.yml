@@ -76,5 +76,6 @@ jobs:
         labels: directory-structure
         reviewers: Devasy23
         assignees: Devasy23
+        token: ${{ secrets.DIR_TREE }}
       env:
-        GITHUB_TOKEN: ${{ secrets.DIR_TREE }}
+        REPO_PAT: ${{ secrets.DIR_TREE }}
