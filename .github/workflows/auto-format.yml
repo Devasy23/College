@@ -1,10 +1,7 @@
 name: Print Directory Structure
 
 on:
-
-  push:
-    branches:
-      - main, master
+  push
 
 jobs:
   print-directory-structure:
