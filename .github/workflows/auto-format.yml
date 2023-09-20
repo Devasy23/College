@@ -77,4 +77,4 @@ jobs:
         reviewers: Devasy23
         assignees: Devasy23
       env:
-        GITHUB_TOKEN: ${{ secrets.TREE }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
