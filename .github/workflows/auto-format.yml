@@ -20,6 +20,10 @@ jobs:
         # Get the generated directory structure
         directory_structure=$(cat ${{ steps.print-directory.outputs.output-file }})
 
+        # Print the directory structure for debugging
+        echo "Directory Structure:"
+        echo "$directory_structure"
+        
         # Create a new branch
         git checkout -b add-directory-structure
 
