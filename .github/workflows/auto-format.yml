@@ -1,9 +1,7 @@
 name: Print and Append Directory Structure to README
 
 on:
-  push:
-    branches:
-      - master  # Replace with your main branch name
+  push
 
 jobs:
   print-and-append-directory-structure:
