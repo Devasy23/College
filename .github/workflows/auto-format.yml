@@ -74,8 +74,6 @@ jobs:
         branch-suffix: timestamp
         base: master
         labels: directory-structure
-        reviewers: Devasy23
-        assignees: Devasy23
         token: ${{ secrets.DIR_TREE }}
       env:
         REPO_PAT: ${{ secrets.DIR_TREE }}
