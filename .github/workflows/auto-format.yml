@@ -72,7 +72,7 @@ jobs:
           https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions).
         branch: add-directory-structure-${{ github.run_id }}
         branch-suffix: timestamp
-        base: main
+        base: master
         labels: directory-structure
         reviewers: Devasy23
         assignees: Devasy23
