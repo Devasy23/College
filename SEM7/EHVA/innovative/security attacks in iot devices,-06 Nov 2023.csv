@@ -1,0 +1,39 @@
+No.,Title,insights,methods_used,practical_implications,summarized_abstract,References,Citations,Authors,Open Access,Publication Type,PDF link,DOI,Date,Journal name,Institutions
+1,"Code Injection Attacks in Wireless-Based Internet of Things (IoT): A Comprehensive Review and Practical Implementations","Code injection attacks in IoT devices can compromise the security of user data stored in the database, leading to data theft or manipulation.","- Code injection attacks in IoT systems
+- Vulnerabilities in wireless frames of IoT applications","- Raise awareness about vulnerabilities in IoT systems
+- Develop more secure IoT systems and protect against threats","- Comprehensive analysis of code injection attacks in IoT
+- Demonstrates severity of threats and vulnerabilities in wireless devices used in IoT applications","","","Haitham Ameen Noman, Osama M. F. Abu-Sharkh","true","Journal Article","https://www.mdpi.com/1424-8220/23/13/6067/pdf?version=1688135897","10.3390/s23136067",2023-06-30,"Sensors",""
+2,"Advances in IoT Security: Vulnerabilities, Enabled Criminal Services, Attacks, and Countermeasures","","- Identification of major vulnerable IoT devices
+- Mapping of vulnerabilities, criminal services, attacks, and solutions","- Identification of vulnerable IoT devices
+- Mapping of vulnerabilities, attacks, and potential solutions","- IoT devices are vulnerable due to design flaws.
+- The paper discusses vulnerabilities, attacks, and countermeasures.","","","Yubaraj Siwakoti, Manish Bhurtel, Danda B. Rawat, Adam Oest","false","Journal Article","","10.1109/JIOT.2023.3252594",2023-07-01,"IEEE Internet of Things Journal",""
+3,"Advances in IoT Security: Vulnerabilities, Enabled Criminal Services, Attacks and Countermeasures","The paper discusses various security vulnerabilities and attacks in IoT devices and provides potential solutions to address these issues.","- Identification of major vulnerable IoT devices
+- Mapping of vulnerabilities, criminal services, attacks, and solutions","- Understanding vulnerabilities and attacks in IoT devices
+- Identifying potential solutions for IoT security","- IoT devices are vulnerable due to design flaws.
+- Paper presents vulnerabilities, attacks, and countermeasures.","","","undefined","false","Journal Article","","10.1109/jiot.2023.3252594",2023-07-01,"IEEE Internet of Things Journal","undefined"
+4,"Security Issues, Attacks and Countermeasures in Layered IoT Ecosystem","The paper provides an overview of security attacks in IoT devices and discusses countermeasures for each layer of the IoT ecosystem.","- Overview of IoT models, applications, vulnerabilities, security goals
+- Categorized layer-wise attacks and countermeasures in detail","- Identifies vulnerabilities and countermeasures in IoT applications
+- Provides a survey on categorized layer-wise attacks and countermeasures","- IoT applications and their vulnerabilities in different domains
+- Overview of attacks and countermeasures in layered IoT ecosystem","","","undefined","true","Journal Article","","10.47164/ijngc.v14i2.892",2023-03-31,"International journal of next-generation computing","undefined"
+5,"Machine Learning-Based Performance Analysis for IoT Attacks in IDS","The paper discusses the need for intrusion detection systems to detect attacks on IoT devices and proposes a machine learning-based solution using three different algorithms.","- J48, Hoeffding Tree, and Naïve Bayes (NB) algorithms
+- Feature selection using Weka Tool","- Development of efficient intrusion detection systems for IoT networks
+- Utilization of machine learning algorithms for attack detection","- IoT security is a major concern
+- Machine learning-based IDS for IoT attacks","","","Myint Khaing, Zin May Aye, Thazin Tun","false","Proceedings Article","","10.1109/ICCA51723.2023.10181629",2023-02-27,"",""
+6,"Automatic Verification and Execution of Cyber Attack on IoT Devices","The paper investigates security vulnerabilities in IoT devices and demonstrates the presence of well-known Wi-Fi related vulnerabilities in deployed and currently sold products.","- Automatic penetration testing on IoT devices
+- Modeling and design of autonomous penetration testing agents for IoT devices","- Automated penetration testing for IoT devices
+- Existence of vulnerabilities in deployed IoT products","- Investigated security of IoT devices through automatic penetration testing
+- Demonstrated presence of well-known vulnerabilities in IoT devices","","","Fartein Lemjan Færøy, Muhammad Mudassar Yamin, Ankur Shukla, Basel Katt","true","Journal Article","https://www.mdpi.com/1424-8220/23/2/733/pdf?version=1673254505","10.3390/s23020733",2023-01-01,"Sensors",""
+7,"Anomaly-Based Detection of Microarchitectural Attacks for IoT Devices","This paper focuses on detecting microarchitectural attacks on IoT devices using an anomaly-based approach.","- Unsupervised machine learning for feature selection
+- One-class Support Vector Machine (SVM) for model building","- Lightweight anomaly-based microarchitectural attack detector for IoT devices
+- Quicker detection and response to attacks on embedded devices","- Anomaly-based detector for microarchitectural attacks on IoT devices
+- Uses unsupervised machine learning and feature selection methods","","","undefined","true","Posted Content","https://www.researchsquare.com/article/rs-2626377/latest.pdf","10.21203/rs.3.rs-2626377/v1",2023-03-01,"","undefined"
+8,"An Analysis of Security Attacks on IoT Applications","The paper identifies and analyzes security challenges in IoT environments, including jamming, spoofing, data tampering, and fake nodes.","Jamming, spoofing, data tempering, fake nodes.","- Identification and analysis of security and privacy challenges
+- Jamming, spoofing, data tempering, and fake nodes","- IoT impacts security and privacy of interconnected nodes.
+- Challenges include jamming, spoofing, data tempering, and fake nodes.","","","Khalid Alkhamisi","false","Journal Article","","10.58325/ijisct.002.01.0053",2023-01-30,"",""
+9,"Security Attack on IoT Related Devices Using Raspberry Pi and Kali Linux","This paper presents a project that conducts penetration testing on a Raspberry Pi 4 acting as an IoT device to determine vulnerabilities and suggests best practices for mitigating cyber-attacks.","- DoS attack
+- Man-in-the-middle attack","- Identifying vulnerabilities in IoT devices using Raspberry Pi and Kali Linux.
+- Providing best practices for mitigating cyber-attacks on IoT devices.","- IoT devices face security challenges due to lack of standardization.
+- Project conducted cyber-attacks on Raspberry Pi 4 as IoT device.","","","undefined","false","Proceedings Article","","10.1109/iconda56696.2022.10000370",2022-11-28,"","undefined"
+10,"Security Attack on IoT Related Devices Using Raspberry Pi and Kali Linux","This paper presents a project that conducts penetration testing on a Raspberry Pi 4 acting as an IoT device to determine vulnerabilities and suggests best practices for mitigating cyber-attacks.","- DoS attack
+- Man-in-the-middle attack","","- IoT devices face security challenges due to lack of industry-wide standards
+- Project conducted penetration testing on Raspberry Pi 4","","","Batrisyia B Mohd Bakry, Alisa Rafiqah Bt Adenan, Yusnani Mohd Yussoff","false","Proceedings Article","","10.1109/ICONDA56696.2022.10000370",2022-11-28,"",""
